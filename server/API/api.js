@@ -33,7 +33,7 @@ app.post("/register",function(req,res){
 });
 
 app.get("/user/:email/data",function(req,res){
-  res.send({message : "Dinesh is a fucker"});
+  res.send({message : "Hello"});
   users.findOne({email : email},function(err,docs){
     if(err)
     {
